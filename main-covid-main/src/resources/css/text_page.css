@@ -1,0 +1,287 @@
+.container {
+    width: 100vh;
+    height: 87vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    /* max-width: 80rem; */
+    margin: -0.3rem auto;
+    /* padding-top: 1rem; */
+    padding: 7rem;
+    width: 100%;
+    /* height: 100%; */
+    background-image: linear-gradient(rgba(209, 203, 203, 0.9), rgba(189, 178, 178, 0.9)), url('/src/img/covid-19-landing-hero.webp');
+    background-size: contain;
+    
+    /* backface-visibility: hidden; */
+
+} 
+.option-con {
+    display: flex;
+    margin-bottom: 0.5rem;
+    width: 100%;
+    font-size: 1.8rem;
+    border: 0.1rem solid rgba(81, 83, 85, 0.25);
+    background-color: #F3F2F2;
+}
+
+.heads{
+
+    padding-top: 1rem;
+    font-size: 1.7rem;
+    text-align: center;
+    color: black;
+    font-style: italic;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.option-con:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #F3F2F2;
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+}
+
+.options {
+    padding: 1.5rem 2.5rem;
+    background-color: #6a149b;;
+    color: white;
+    text-align: center;
+}
+
+.choosen {
+    padding: 1.5rem;
+    width: 100%;
+    text-align: center;
+    background-color: #6a149b;
+    color: white;
+}
+
+#icon {
+    /* background: rgb(113, 170, 243); */
+    /* padding:9rem; */
+    padding: 4rem 0rem 1rem 4rem;
+    margin-top: 3rem;
+    /* margin-bottom: 3rem; */
+}
+
+#timer {
+    /* background: rgba(141, 182, 243, 0.74); */
+    padding: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+#timer p {
+    /* padding: 4rem;  */
+    /* margin-top: 4rem; */
+    /* margin-bottom: 3rem; */
+    /* background: #396e9c; */
+    /* margin: 0;
+    padding: 0; */
+    font-size: 3vh;
+    padding: 0;
+}
+
+#icon p {
+    font-size: 3vh;
+}
+
+#icon i {
+    padding: 0 3rem 0 2rem;
+}
+
+.correct {
+    /* background-color: rgb(7, 124, 37); */
+}
+
+.incorrect {
+    /* background-color: rgb(138, 14, 14); */
+}
+
+#hud {
+    max-width: 80rem;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.hud-prefix {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 80rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-style: italic;
+    color: #6a149b;
+}
+
+.cill {
+    color: rgb(248, 12, 12);
+    /* font-weight: 200; */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    padding-top: 1rem;
+    text-align: center;
+    /* font-size: 1.3rem; */
+    font-style: italic;
+    /* color: #6a149b; */
+
+
+}
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progress-bar-full {
+    height: 3.4rem;
+    /* background-color: #56a5eb; */
+    width: 0%;
+}
+
+#loader {
+    border: 1.6rem solid rgb(248, 245, 245);
+    border-top: 1.6rem solid #6a149b;;
+    border-radius: 50%;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.btm{
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    width: 22rem;
+    text-align: center;
+    /* border: 0.1rem solid #56a5eb; */
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #0c161f;
+    /* background-color: rgb(176, 228, 248); */
+}
+
+.btm:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+}
+
+/* login */
+
+.btn button {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    width: 22rem;
+    text-align: center;
+    border: 0.1rem solid white;
+
+    /* margin-left: 1rem; */
+    /* margin-top: 4rem; */
+    text-decoration: none;
+    color: white;
+    background-color: #6a149b;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+form {
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: center;
+}
+
+input {
+    margin-bottom: 1rem;
+    /* width: 34rem; */
+    /* padding: 1.5rem; */
+    font-size: 1.8rem;
+    /* border: line; */
+    align-items: center;
+    border-color: #6a149b;
+    border-radius: 0.rem;
+    border-style: groove;
+    box-shadow: 0 0.1rem 0.2rem 0 #F3F2F2;
+}
+
+.area {
+    /* border: 0.1rem solid #56a5eb; */
+    /* border-radius: 20px; */
+    /* padding: 5.4rem; */
+    /* margin-top: 16rem; */
+}
+
+label {
+    font-size: 1.2rem;
+    color: #6a149b;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.into{
+
+    text-align: center;
+    color: #6a149b;
+    font-size: 1.4rem;
+}
+
+button{
+  color:whitesmoke;
+  background-color: #6a149b;
+  align-items: center;
+  /* padding: 1rem; */
+   border-color: #6a149b;
+    border-radius: 0.7rem;
+    /* border-style: groove; */
+    /* box-shadow: 0 0.1rem 0.2rem 0 #F3F2F2; */
+    font-size: 1.4rem;
+    padding: 0.8rem 2rem;
+    /* width: 22rem; */
+    margin-left: 22rem; 
+    text-align: center;
+    border: 0.1rem solid white;
+
+    /* margin-left: 1rem; */
+    /* margin-top: 4rem; */
+    text-decoration: none;
+    /* color: white; */
+    /* background-color: #6a149b; */
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(5, 24, 34, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 120ms;
+}
